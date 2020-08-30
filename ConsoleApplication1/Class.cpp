@@ -30,3 +30,6 @@ int Class::getIdname() {
 	return idname;
 }
 
+void Class::newPrint() {
+	std::cout << "\nTitle: " << getTitle() << "\nAuthor: " << getAuthor() << "\nPublisher: " << getPublisher() << "\nID name: " << getIdname() << endl;
+}

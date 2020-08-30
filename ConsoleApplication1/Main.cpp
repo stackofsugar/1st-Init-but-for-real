@@ -9,9 +9,6 @@ void printDetails(std::string printChoice);
 Class Alienator; Class Csw32; Class PC; 
 
 int main() {
-
-
-
 	Alienator.setTitle("Alienator");
 	Alienator.setAuthor("Michael Krisnandhi");
 	Alienator.setPublisher("Michaelsoft Wandows");
@@ -33,30 +30,17 @@ int main() {
 	cin >> choice;
 
 	if (choice == 1) {
-		printDetails("Alienator");
+		Alienator.newPrint();
 	}
 	else if (choice == 2) {
-		printDetails("Csw32");
+		Csw32.newPrint();
 	}
 	else if (choice == 3) {
-		printDetails("PrimeChecker");
+		PC.newPrint();
 	}
 	else {
 		cerr << "Unknown expression entered.\n";
 	}
 
 	return 0;
-}
-
-// initializing method to print class members
-void printDetails(std::string printChoice) {
-	if (printChoice == "Alienator") { // will print Alienator
-		cout << "\nTitle: " << Alienator.getTitle() << "\nAuthor: " << Alienator.getAuthor() << "\nPublisher: " << Alienator.getPublisher() << "\nID Name: " << Alienator.getIdname() << endl;
-	}
-	else if (printChoice == "Csw32") { // will print Csw32
-		cout << "\nTitle: " << Csw32.getTitle() << "\nAuthor: " << Csw32.getAuthor() << "\nPublisher: " << Csw32.getPublisher() << "\nID Name: " << Csw32.getIdname() << endl;
-	}
-	else if (printChoice == "PrimeChecker") { // will print PrimeChecker
-		cout << "\nTitle: " << PC.getTitle() << "\nAuthor: " << PC.getAuthor() << "\nPublisher: " << PC.getPublisher() << "\nID Name: " << PC.getIdname() << endl;
-	}
 }

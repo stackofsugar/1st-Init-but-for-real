@@ -21,7 +21,7 @@ public:
 		std::string getPublisher();
 		int getIdname();
 		// establish a method to display class members
-		void printDetails(std::string printChoice);
+		void newPrint();
 };
 
 #endif //CLASS_H
