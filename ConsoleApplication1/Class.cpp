@@ -29,3 +29,4 @@ std::string Class::getPublisher() {
 int Class::getIdname() {
 	return idname;
 }
+

@@ -20,6 +20,8 @@ public:
 		std::string getAuthor();
 		std::string getPublisher();
 		int getIdname();
+		// establish a method to display class members
+		void printDetails(std::string printChoice);
 };
 
 #endif //CLASS_H
