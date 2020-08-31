@@ -5,6 +5,7 @@
 
 build/
 debat.txt
+.vscode/
 
 # User-specific files
 *.rsuser
